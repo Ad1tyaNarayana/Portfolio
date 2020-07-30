@@ -1,192 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+      Portfolio
+    </title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
     />
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" />
-    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+    <link href="../assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   </head>
-  <body>
-    <nav>
-      <div class="logo" onclick="fade">
-        <a id="welcome-link" href="#welcome"><p>Aditya</p></a>
-      </div>
-      <div class="navigation">
-        <ul>
-          <li>
-            <a id="work-link" href="#work" onclick="fade">
-              WorK
-            </a>
-          </li>
-          <a id="about-link" href="#about" onclick="fade">
-            <li>About</li>
+
+  <body class="landing-page sidebar-collapse">
+    <nav
+      class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg"
+      color-on-scroll="100"
+      id="sectionsNav"
+    >
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="#">
+            Aditya
           </a>
-          <a id="contact-link" href="#contact" onclick="fade">
-            <li>contAct</li>
-          </a>
-        </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="material-icons">person</i> About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">
+                <i class="material-icons">code</i> Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="material-icons">chat</i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="outer-wrapper">
-      <div class="wrapper">
-        <section id="welcome" class="slide one">
-          <div class="welcome-text">
-            <div id="title">
-              <h1>
-                aDitya <br />
-                narVyAna
-              </h1>
-              <span class="pos">Web DevelopeR</span>
-              <p>i enjoY builDinG Websites</p>
-            </div>
-            <span id="horizontal"> <-horizontal scroll-></span>
+    <div
+      class="page-header header-filter"
+      data-parallax="true"
+      style="background-image: url('./background.svg');"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="title">Aditya Narayana</h1>
+            <h4>
+              Hey, I am a self taught full-stack web developer who loves
+              programing and learning!
+            </h4>
+            <br />
+            <a href="#contact" class="btn btn-danger btn-raised btn-lg">
+              <i class="material-icons">mail</i> Contact
+            </a>
           </div>
-        </section>
-        <section id="work" class="slide two">
-          <h2>Work</h2>
-          <ul class="main-ul">
-            <li>
-              <div>
-                <img src="./img/WeatherAppImg.PNG" alt="weather app" />
-                <h3>checK the Weather noW</h3>
-                <p>
-                  This Project Uses React, Axios and Jquery. React Manages The
-                  Dynamic Section of Displaying The Weather Data. Axios is used
-                  To Get Data from the Api.
-                </p>
-                <ul class="links">
-                  <li class="btn">
-                    <a
-                      href="https://github.com/Ayt1da/WeatherApp"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Code</a
-                    >
-                  </li>
-                  <li class="btn">
-                    <a
-                      href="https://ayt1da.github.io/WeatherApp/"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Website</a
-                    >
-                  </li>
-                </ul>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="main main-raised">
+      <div class="container">
+        <div class="section text-center">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+              <h2 class="title">About Me</h2>
+              <h4>
+                I love solving problems and being creative.<br />
+                My journey of learning how to code began half a year ago and
+                since have come to love it!<br />
+              </h4>
+            </div>
+          </div>
+          <div class="features">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon icon-info">
+                    <i class="material-icons">desktop_windows</i>
+                  </div>
+                  <h4 class="info-title">Front End</h4>
+                  <h3>
+                    Javascript | React js | Redux
+                  </h3>
+                </div>
               </div>
-            </li>
-            <li>
-              <div>
-                <img src="./img/AdviceImg.jpg" alt="advice app" />
-                <h3>advice foR you</h3>
-                <p>
-                  The Project uses React and Axios. React and Axios Is used to
-                  Get Data from the Api and Display the dynamic Content.
-                </p>
-                <ul class="links">
-                  <li class="btn">
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <i class="material-icons">merge_type</i>
+                  </div>
+                  <h4 class="info-title">Other</h4>
+                  <h3>
+                    Git | Chai js
+                  </h3>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon icon-danger">
+                    <i class="material-icons">dns</i>
+                  </div>
+                  <h4 class="info-title">Back End</h4>
+                  <h3>
+                    Nodejs | Express | MongoDb
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="projects" class="section text-center">
+          <h2 class="title">Projects</h2>
+          <div class="team">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="team-player">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="./AdviceImg.jpg"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h4>
+                        An Advice App which uses React and Axios
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <ul class="projectLinks">
+                  <li>
                     <a
                       href="https://github.com/Ayt1da/Advice"
                       target="_blank"
-                      rel="noreferrer"
+                      class="btn btn-primary"
                       >Code</a
                     >
                   </li>
-                  <li class="btn">
+                  <li>
                     <a
                       href="https://ayt1da.github.io/Advice/"
                       target="_blank"
-                      rel="noreferrer"
-                      >Website</a
+                      class="btn btn-primary"
+                      >Live Site</a
                     >
                   </li>
                 </ul>
               </div>
-            </li>
-            <li>
-              <div>
-                <img src="./img/LensedEye.JPG" alt="Instagram page site" />
-                <h3>lenseD eye stuDio</h3>
-                <p>
-                  A Website Made for Lensed Eye Studio Instagram Page Using
-                  Jquerry to make it Special.
-                </p>
-                <ul class="links">
-                  <li class="btn">
+              <div class="col-md-4">
+                <div class="team-player">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="./WeatherAppImg.PNG"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h4>
+                        A weather App which uses React and Axios
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <ul class="projectLinks">
+                  <li>
                     <a
-                      href="https://github.com/Ayt1da/LensedEyeStudio"
+                      href="https://github.com/Ayt1da/WeatherApp"
                       target="_blank"
-                      rel="noreferrer"
+                      class="btn btn-primary"
                       >Code</a
                     >
                   </li>
-                  <li class="btn">
+                  <li>
                     <a
-                      href="https://lensedeyestudio.netlify.app/"
+                      href="https://ayt1da.github.io/WeatherApp/"
                       target="_blank"
-                      rel="noreferrer"
-                      >Website</a
+                      class="btn btn-primary"
+                      >Live Site</a
                     >
                   </li>
                 </ul>
               </div>
-            </li>
-          </ul>
-        </section>
-        <section id="about" class="slide three">
-          <h2>Hey</h2>
-          <p>i am a self taught web developer who likes programing</p>
-          <br />
-          <ul>
-            <li>
-              <div id="front">
-                <h3><i class="fa fa-tv" aria-hidden="true"></i> front end</h3>
-                <p>javascript| reactjs| redux</p>
+              <div class="col-md-4">
+                <div class="team-player">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="./LensedEye.JPG"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h4>
+                        A website made for Lensed Eye Instagram Accout
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <ul class="projectLinks">
+                  <li>
+                    <a
+                      href="https://github.com/Ayt1da/LensedEye"
+                      target="_blank"
+                      class="btn btn-primary"
+                      >Code</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://lensedeyestudio.netlify.app/"
+                      target="_blank"
+                      class="btn btn-primary"
+                      >Live Site</a
+                    >
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li>
-              <div id="back">
-                <h3>
-                  <i class="fa fa-server" aria-hidden="true"></i> back end
-                </h3>
-                <p>nodejs| mongodb| sql</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section id="contact" class="slide four">
-          <h2>lets talk</h2>
-          <form
-            action="https://send.pageclip.co/Gdj5anEmk66OvpA6vUMiRcwR2k7cM6X1"
-            class="pageclip-form"
-            method="post"
-          >
-            <input type="text" name="name" placeholder="name" />
-            <input type="email" name="email" placeholder="email" />
-            <input type="text" name="message" placeholder="message" />
-            <button type="submit" class="pageclip-form__submit">
-              <span><i class="fa fa-paper-plane"></i></span>
-            </button>
-          </form>
-        </section>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="section section-contacts">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+              <h2 class="text-center title">Lets Talk</h2>
+              <form
+                action="https://send.pageclip.co/Gdj5anEmk66OvpA6vUMiRcwR2k7cM6X1"
+                class="pageclip-form contact-form"
+                method="post"
+              >
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="bmd-label-floating">Your Name</label>
+                      <input name="name" type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="bmd-label-floating">Your Email</label>
+                      <input name="email" type="email" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleMessage" class="bmd-label-floating"
+                    >Your Message</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="message"
+                  ></input>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 ml-auto mr-auto text-center">
+                    <button type="submit" class="pageclip-form__submit btn btn-primary btn-raised">
+                      <i class="fa fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <br />
-    <br />
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-    <script src="script.js"></script>
+    <footer class="footer footer-default">
+      <div class="container">
+        <div class="copyright float-right">
+          <i class="material-icons">thumb_up</i> Lets collaborate together!
+        </div>
+      </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script
+      src="../assets/js/core/jquery.min.js" defer
+      type="text/javascript"
+    ></script>
+    <script
+      src="../assets/js/core/popper.min.js" defer
+      type="text/javascript"
+    ></script>
+    <script
+      src="../assets/js/core/bootstrap-material-design.min.js" defer
+      type="text/javascript"
+    ></script>
+    <script src="../assets/js/plugins/moment.min.js" defer></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script
+      src="../assets/js/plugins/nouislider.min.js"
+      type="text/javascript" defer
+    ></script>
+    <!--  Google Maps Plugin    -->
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script
+      src="../assets/js/material-kit.js?v=2.0.7"
+      type="text/javascript" defer
+    ></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" defer charset="utf-8"></script>
   </body>
+  <style>
+    .projectLinks {
+      display: inline-flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .projectLinks li {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .card{
+      -webkit-box-shadow: 0px 14px 15px -7px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 14px 15px -7px rgba(0,0,0,0.7);
+box-shadow: 0px 14px 15px -7px rgba(0,0,0,0.7);
+    }
+  </style>
 </html>
