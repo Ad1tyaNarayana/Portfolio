@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>
-      Portfolio
-    </title>
+    <title>Portfolio</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
@@ -13,14 +11,9 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+      href="https://fonts.googleapis.com/css?family=Roboto:400|Roboto+Slab:400|Material+Icons"
     />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
-    />
-    <link href="../assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body class="landing-page sidebar-collapse">
@@ -32,7 +25,7 @@
       <div class="container">
         <div class="navbar-translate">
           <a class="navbar-brand" href="#">
-            Aditya
+            <strong>Aditya</strong>
           </a>
           <button
             class="navbar-toggler"
@@ -71,16 +64,16 @@
     <div
       class="page-header header-filter"
       data-parallax="true"
-      style="background-image: url('./background.svg');"
+      style="background-image: url('./mountain.jpg')"
     >
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h1 class="title">Aditya Narayana</h1>
-            <h4>
+            <h3>
               Hey, I am a self taught full-stack web developer who loves
               programing and learning!
-            </h4>
+            </h3>
             <br />
             <a href="#contact" class="btn btn-danger btn-raised btn-lg">
               <i class="material-icons">mail</i> Contact
@@ -96,9 +89,8 @@
             <div class="col-md-8 ml-auto mr-auto">
               <h2 class="title">About Me</h2>
               <h4>
-                I love solving problems and being creative.<br />
-                My journey of learning how to code began half a year ago and
-                since have come to love it!<br />
+                My journey of learning how to code began a year ago and since
+                have come to love it!
               </h4>
             </div>
           </div>
@@ -110,20 +102,16 @@
                     <i class="material-icons">desktop_windows</i>
                   </div>
                   <h4 class="info-title">Front End</h4>
-                  <h3>
-                    Javascript | React js | Redux
-                  </h3>
+                  <h3>Javascript | React js | Redux</h3>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="info">
                   <div class="icon icon-success">
-                    <i class="material-icons">merge_type</i>
+                    <i class="material-icons">settings</i>
                   </div>
                   <h4 class="info-title">Other</h4>
-                  <h3>
-                    Git | Chai js
-                  </h3>
+                  <h3>Git | Chai js | Helmet js</h3>
                 </div>
               </div>
               <div class="col-md-4">
@@ -132,33 +120,29 @@
                     <i class="material-icons">dns</i>
                   </div>
                   <h4 class="info-title">Back End</h4>
-                  <h3>
-                    Nodejs | Express | MongoDb
-                  </h3>
+                  <h3>Nodejs | Express | MongoDb</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="projects" class="section text-center">
-          <h2 class="title">Projects</h2>
-          <div class="team">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="team-player">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="./AdviceImg.jpg"
-                      rel="nofollow"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4>
-                        An Advice App which uses React and Axios
-                      </h4>
-                    </div>
-                  </div>
+      </div>
+      <div id="projects" class="container text-center">
+        <h2 class="title">Projects</h2>
+        <div class="team">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="team-player">
+                <div class="card">
+                  <img
+                    class="card-img-top rounded"
+                    src="./AdviceImg.jpg"
+                    alt="Card image cap"
+                    loading="lazy"
+                  />
+                  <h4 class="card-header card-header-info">
+                    An Advice App which uses React and Axios
+                  </h4>
                 </div>
                 <ul class="projectLinks">
                   <li>
@@ -179,21 +163,19 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-4">
-                <div class="team-player">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="./WeatherAppImg.PNG"
-                      rel="nofollow"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4>
-                        A weather App which uses React and Axios
-                      </h4>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <div class="card">
+                  <img
+                    class="card-img-top rounded"
+                    src="./WeatherAppImg.PNG"
+                    alt="Card image cap"
+                    loading="lazy"
+                  />
+                  <h4 class="card-header card-header-info">
+                    A Weather App which uses React and Axios
+                  </h4>
                 </div>
                 <ul class="projectLinks">
                   <li>
@@ -214,21 +196,19 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-4">
-                <div class="team-player">
-                  <div class="card">
-                    <img
-                      class="card-img-top"
-                      src="./LensedEye.JPG"
-                      rel="nofollow"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4>
-                        A website made for Lensed Eye Instagram Accout
-                      </h4>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <div class="card">
+                  <img
+                    class="card-img-top rounded"
+                    src="./LensedEye.JPG"
+                    alt="Card image cap"
+                    loading="lazy"
+                  />
+                  <h4 class="card-header card-header-info">
+                    A website made for Lensed Eye Instagram Accout
+                  </h4>
                 </div>
                 <ul class="projectLinks">
                   <li>
@@ -252,6 +232,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div id="contact" class="section section-contacts">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
@@ -264,75 +246,101 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Your Name</label>
-                      <input name="name" type="text" class="form-control" />
+                      <label class="bmd-label-floating">Name</label>
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control input"
+                      />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Your Email</label>
-                      <input name="email" type="email" class="form-control" />
+                      <label class="bmd-label-floating">Email</label>
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control input"
+                        required
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="exampleMessage" class="bmd-label-floating"
-                    >Your Message</label
+                    >Message</label
                   >
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control input"
                     name="message"
-                  ></input>
+                    required
+                  />
                 </div>
                 <div class="row">
                   <div class="col-md-4 ml-auto mr-auto text-center">
-                    <button type="submit" class="pageclip-form__submit btn btn-primary btn-raised">
-                      <i class="fa fa-paper-plane"></i>
+                    <button
+                      type="submit"
+                      class="pageclip-form__submit btn btn-primary btn-raised"
+                    >
+                      <i class="material-icons">send</i>
                     </button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
+          <ul class="flex float-left">
+            <li>
+              <a
+                class="btn btn-primary btn-round btn-sm lowerCasefooter"
+                href="mailto:AdityaNarayana@protonmail.com"
+                target="_blank"
+                >Email</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-primary btn-round btn-sm lowerCasefooter"
+                href="https://github.com/Ayt1da"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-primary btn-round btn-sm lowerCasefooter"
+                href="https://twitter.com/TheAyt1da"
+                target="_blank"
+                >Twitter</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <footer class="footer footer-default">
+    <footer class="footer">
       <div class="container">
-        <div class="copyright float-right">
-          <i class="material-icons">thumb_up</i> Lets collaborate together!
-        </div>
+        <div class="float-right">AdityaNarayana@protonmail.com</div>
       </div>
     </footer>
-    <!--   Core JS Files   -->
+    <script src="./assets/js/script.js" type="text/javascript" defer></script>
     <script
-      src="../assets/js/core/jquery.min.js" defer
-      type="text/javascript"
+      src="https://s.pageclip.co/v1/pageclip.js"
+      async
+      charset="utf-8"
     ></script>
-    <script
-      src="../assets/js/core/popper.min.js" defer
-      type="text/javascript"
-    ></script>
-    <script
-      src="../assets/js/core/bootstrap-material-design.min.js" defer
-      type="text/javascript"
-    ></script>
-    <script src="../assets/js/plugins/moment.min.js" defer></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script
-      src="../assets/js/plugins/nouislider.min.js"
-      type="text/javascript" defer
-    ></script>
-    <!--  Google Maps Plugin    -->
-    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-    <script
-      src="../assets/js/material-kit.js?v=2.0.7"
-      type="text/javascript" defer
-    ></script>
-    <script src="https://s.pageclip.co/v1/pageclip.js" defer charset="utf-8"></script>
   </body>
   <style>
+    .card-header {
+      margin: 0 0 -80px 0;
+    }
+    .card img {
+      margin: 0 0 -10px 0;
+    }
+    .lowpaddingsection {
+      padding-top: 40px;
+    }
     .projectLinks {
       display: inline-flex;
       list-style-type: none;
@@ -346,10 +354,33 @@
     html {
       scroll-behavior: smooth;
     }
-    .card{
-      -webkit-box-shadow: 0px 14px 15px -7px rgba(0,0,0,0.7);
--moz-box-shadow: 0px 14px 15px -7px rgba(0,0,0,0.7);
-box-shadow: 0px 14px 15px -7px rgba(0,0,0,0.7);
+    .card {
+      -webkit-box-shadow: 0 14px 15px -7px rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: 0 14px 15px -7px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 14px 15px -7px rgba(0, 0, 0, 0.7);
+      margin-bottom: 60px;
+    }
+    .lowerCasefooter {
+      text-transform: none !important;
+    }
+    .flex li {
+      display: inline-flex;
+    }
+    ::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+    ::-webkit-scrollbar-track {
+      -webkit-border-radius: 1px;
+      border-radius: 1px;
+      background-color: #fafafa;
+    }
+    ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 1px;
+      border-radius: 1px;
+      background: #9c27b0;
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+      background: #9c27b0;
     }
   </style>
 </html>
